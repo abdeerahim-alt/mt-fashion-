@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>صفحة طلب منتج - MT Fashion 34</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 500px;
+      margin: 30px auto;
+      padding: 10px;
+      background: #f7f7f7;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      color: #b0353a;
+    }
+    form {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input, select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 12px;
+      background-color: #b0353a;
+      color: white;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    button:hover {
+      background-color: #8a272b;
+    }
+  </style>
+</head>
+<body>
+  <h1>MT Fashion 34 - طلب منتج</h1>
+  <form action="https://formsubmit.co/abdrahimbelmihoub@gmail.com" method="POST">
+    <label for="firstName">الاسم</label>
+    <input type="text" id="firstName" name="الاسم" required />
+
+    <label for="lastName">اللقب</label>
+    <input type="text" id="lastName" name="اللقب" required />
+
+    <label for="phone">رقم الهاتف</label>
+    <input type="tel" id="phone" name="الهاتف" required pattern="[0-9]{8,15}" placeholder="مثلاً: 0791234567" />
+
+    <label for="state">الولاية</label>
+    <select id="state" name="الولاية" required>
+      <option value="" disabled selected>اختر الولاية</option>
+      <option>البليدة</option>
+      <option>الجزائر</option>
+      <option>تيبازة</option>
+      <option>سطيف</option>
+      <option>وهران</option>
+      <option>عنابة</option>
+      <option>قسنطينة</option>
+      <option>باتنة</option>
+      <option>الجلفة</option>
+      <option>تبسة</option>
+      <option>سكيكدة</option>
+      <option>تيزي وزو</option>
+      <option>تلمسان</option>
+      <option>بسكرة</option>
+      <option>أدرار</option>
+      <option>غرداية</option>
+      <option>الوادي</option>
+      <option>بساطا</option>
+      <option>بجاية</option>
+      <option>سعيدة</option>
+      <option>جيجل</option>
+      <option>المدية</option>
+      <option>بومرداس</option>
+      <option>الأغواط</option>
+      <option>الطارف</option>
+      <option>ميلة</option>
+      <option>المنيعة</option>
+      <option>غليزان</option>
+      <option>سوق أهراس</option>
+      <option>عين الدفلى</option>
+      <option>البويرة</option>
+      <option>البرج</option>
+      <option>تيارت</option>
+      <option>البيض</option>
+      <option>سيدي بلعباس</option>
+      <option>الطارف</option>
+      <option>المسيلة</option>
+      <option>بشار</option>
+      <option>خنشلة</option>
+    </select>
+
+    <label for="productName">اسم المنتج</label>
+    <input type="text" id="productName" name="اسم المنتج" required />
+
+    <label for="color">اللون</label>
+    <input type="text" id="color" name="اللون" required />
+
+    <button type="submit">إرسال الطلب</button>
+  </form>
+</body>
+</html>
